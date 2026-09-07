@@ -21,10 +21,12 @@ est encodé en Base64** dans un en-tête HTTP d'un autre échange.
 ```
 challenge-exfiltration-esd/
 ├── challenge.yml              fiche de déploiement CTFd (titre, énoncé, flag)
-├── WriteUp.md                 solution détaillée, reproductible pas à pas
 ├── src/public/capture.pcap    capture réseau remise au joueur
 └── build.py / server.py       génération de la capture (reproductibilité)
 ```
+
+La solution détaillée (Write Up) est le document `WriteUp - Exfiltration sur
+l'intranet ESD.docx` à la racine du dépôt.
 
 Prérequis : `tcpdump`, `zip`, `python3`, `tshark`.
 
