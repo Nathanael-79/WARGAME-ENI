@@ -1,0 +1,37 @@
+name: "Exfiltration sur l'intranet ESD"
+author: Nathanael
+category: Réseau
+description: |
+    author: Nathanael
+
+    Le SOC de l'ESD Academy a intercepte un trafic suspect sur l'intranet
+    pedagogique. Un stagiaire semble avoir exfiltre le corrige d'un examen
+    blanc vers un service de depot interne. La capture reseau est fournie :
+    reconstituez le document et retrouvez la cle qui l'ouvre.
+
+    Le document a ete enferme dans une archive avant de partir, et il n'est
+    pas arrive d'un seul tenant : il a fallu deux envois separes vers le
+    service de depot pour tout transmettre, dans l'ordre ou ils ont ete
+    captures. Deux petites lettres trahissent toujours ce genre d'archive,
+    meme une fois recollee et deguisee pour le voyage.
+
+    La cle de l'archive n'a pas transite en clair : elle a ete maquillee
+    dans un en-tete d'un autre echange, mais il suffit de la faire passer
+    par le meme decodeur que le reste du message pour la lire.
+
+    Le flag (au format ESD{...}) se trouve dans le document exfiltre.
+
+    exemple : ESD{...}
+type: standard
+value: 300
+requirements:
+  - "Welcome"
+flags:
+  - ESD{Antis3ch3_Du_S0C_ESD}
+files:
+  - ./src/public/capture.pcap
+tags:
+  - Réseau
+  - difficile
+state: visible
+version: 1.0
