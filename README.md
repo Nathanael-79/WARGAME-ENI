@@ -4,7 +4,7 @@ Module Wargame - ESD Cybersecurity Academy
 
 ## Présentation
 
-Challenge CTF de catégorie **Réseau**, difficulté **Difficile (300 pts)**.
+Challenge CTF de catégorie **Réseau**, difficulté **Intermédiaire (200 pts)**.
 
 Scénario : le SOC de l'ESD Academy intercepte un trafic suspect sur l'intranet
 pédagogique. Un stagiaire a exfiltré le corrigé d'un examen blanc vers un
@@ -32,7 +32,7 @@ Prérequis : `tcpdump`, `zip`, `python3`, `tshark`.
 
 ## Conformité à la note de cadrage
 
-- Catégorie Réseau, difficulté Difficile (300 pts), flag au format `ESD{...}`
+- Catégorie Réseau, difficulté Intermédiaire (200 pts), flag au format `ESD{...}`
   sans espace et sensible à la casse.
 - Références ESD Academy (intranet pédagogique, dashboard stagiaire, ENT,
   forum, promo NESD_006).

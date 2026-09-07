@@ -23,7 +23,7 @@ description: |
 
     exemple : ESD{...}
 type: standard
-value: 300
+value: 200
 requirements:
   - "Welcome"
 flags:
@@ -32,6 +32,6 @@ files:
   - ./src/public/capture.pcap
 tags:
   - Réseau
-  - difficile
+  - moyen
 state: visible
 version: 1.0
