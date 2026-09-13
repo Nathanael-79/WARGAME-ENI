@@ -29,7 +29,7 @@ requirements:
 flags:
   - ESD{Antis3ch3_Du_S0C_ESD}
 files:
-  - ./src/public/capture.pcap
+  - ./capture.pcap
 tags:
   - Réseau
   - moyen
