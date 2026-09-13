@@ -8,7 +8,7 @@ Challenge CTF de catégorie **Réseau**, difficulté **Intermédiaire (200 pts)*
 
 Scénario : le SOC de l'ESD Academy intercepte un trafic suspect sur l'intranet
 pédagogique. Un stagiaire a exfiltré le corrigé d'un examen blanc vers un
-service de dépôt interne. Une capture réseau (`capture.pcap`) est fournie ;
+service de dépôt interne. Une capture réseau (`Challenge_Exfiltration_ESD.pcap`) est fournie ;
 il faut reconstituer le document exfiltré et retrouver la clé qui l'ouvre pour
 obtenir le flag.
 
@@ -21,7 +21,7 @@ est encodé en Base64** dans un en-tête HTTP d'un autre échange.
 ```
 challenge-exfiltration-esd/
 ├── challenge.yml     fiche de déploiement CTFd (titre, énoncé, flag)
-├── capture.pcap      capture réseau remise au joueur
+├── Challenge_Exfiltration_ESD.pcap      capture réseau remise au joueur
 └── build.py / server.py   génération de la capture (reproductibilité)
 ```
 
